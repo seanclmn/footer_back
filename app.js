@@ -20,7 +20,7 @@ app.use(express.json({extended: false}))
 app.get('/', (req,res)=> res.send('Hello world!'))
 
 //use routes
-app.use('/', users)
+app.use('/api/users', users)
 
 const port = process.env.PORT || 4000
 
